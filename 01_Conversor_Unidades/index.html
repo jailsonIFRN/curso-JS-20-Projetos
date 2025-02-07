@@ -9,11 +9,36 @@
     
     <div class="container"><!-- Container PAI -->
         <h1>Conversor de Unidades</h1>
-        <div class="input-group">
+        <div class="input-group"> <!-- Container FILHOS-->
             <label for="input">Digite a quantidade: </label>
             <input type="number" id="inpuy" name="inpuy" placeholder="0" />
-            
+
         </div>
+        <div class="input-group">
+        <label for="from">De: </label>
+        <select name="from" id="from">
+            <option value="m">Metro(s)</option>
+            <option value="Km">Quilômetro(s)</option>
+            <option value="m">Centímetro(s)</option>
+            <option value="m">Milímetro(s)</option>
+        </select>
+        </div>
+        <div class="input-group">
+            <label for="to">Para: </label>
+            <select name="from" id="to">
+                <option value="m">Metro(s)</option>
+                <option value="Km">Quilômetro(s)</option>
+                <option value="m">Centímetro(s)</option>
+                <option value="m">Milímetro(s)</option>
+            </select>
+            </div>
+            <button id="convert-btn">Converter</button>
+            <div class="output-group">
+                <label for="output">Resultado:</label>
+                <input type="text" id="output" readonly />
+            </div>
+            <div id="message"></div>
+
     </div> 
 </body>
 </html>
