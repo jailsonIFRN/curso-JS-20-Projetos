@@ -1,0 +1,33 @@
+/* <body>
+    <div class="container">
+        <h1>Gerador de CPF</h1>
+        <div class="cpf-container">
+            <p id="cpf">999.999.999-99</p>
+            <button id="gerar-cpf">Gerar CPF</button>
+            <button id="copiar-cpf">Copiar CPF</button>
+        </div>
+    </div>
+</body> */
+
+* {
+    font-family: Helvetica;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    text-align: center;   
+
+}
+
+button {
+    background-color: #008cba;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.7rem 3rem;
+    font-size: 1.2rem;
+    margin: 0 0.7rem;
+}
