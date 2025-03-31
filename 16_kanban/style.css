@@ -1,0 +1,82 @@
+/* Aplica a fonte Helvetica para todos os elementos da página */
+* {
+    font-family: Helvetica;
+}
+
+/* Centraliza o título principal (h1) */
+h1 {
+    text-align: center;
+}
+
+/* Define margem externa para o formulário de adicionar tarefas */
+#add-task-form {
+    margin: 0 1rem 1.5rem;
+}
+
+/* Estiliza o campo de entrada de texto do formulário */
+#add-task-form input {
+    padding: 0.3rem;                    /* Espaçamento interno */
+    margin-right: 0.5rem;               /* Espaço à direita */
+    border-radius: 3px;                 /* Cantos arredondados */
+    border: 1px solid #ccc;             /* Borda cinza clara */
+}
+
+/* Estiliza o botão de criar tarefa */
+#add-task-form button {
+    padding: .3rem 1rem;                /* Espaçamento interno (vertical e horizontal) */
+    background-color: #2196f3;          /* Cor de fundo azul */
+    color: #fff;                        /* Cor do texto branca */
+    border: none;                       /* Remove a borda */
+    border-radius: 3px;                 /* Cantos arredondados */
+    cursor: pointer;                    /* Mostra o cursor de "mão" ao passar por cima */
+}
+
+/* Define o layout principal do Kanban como flexível (em linha) */
+.kanban {
+    display: flex;                      /* Layout em linha (horizontal) */
+    justify-content: space-around;     /* Espaço igual entre as colunas */
+    margin-top: 1.5rem;                 /* Espaço acima do quadro */
+}
+
+/* Estiliza cada coluna do quadro Kanban */
+.column {
+    width: 30%;                         /* Largura de cada coluna */
+    background-color: #eee;             /* Cor de fundo cinza claro */
+    border-radius: 10px;                /* Cantos arredondados */
+    padding: 0.5rem;                    /* Espaçamento interno */
+}
+
+/* Estiliza as listas de tarefas */
+.tasks {
+    list-style: none;                   /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 1rem;                      /* Espaçamento interno */
+    border: 2px dashed #ccc;            /* Borda tracejada cinza clara */
+    border-radius: 5px;                 /* Cantos arredondados */
+    min-height: 100px;                  /* Altura mínima para manter o espaço mesmo sem tarefas */
+}
+
+/* Estiliza cada item de tarefa */
+.tasks li {
+    background-color: #fff;             /* Cor de fundo branca */
+    padding: 0.8rem;                    /* Espaçamento interno */
+    margin: 0.5rem 0;                   /* Margem vertical entre tarefas */
+    border-radius: 5px;                 /* Cantos arredondados */
+    cursor: move;                       /* Cursor de movimentação (drag) */
+    transition: 0.4s;                   /* Transição suave para efeitos */
+}
+
+/* Estiliza a tarefa enquanto está sendo arrastada */
+.tasks li.dragging {
+    opacity: 0.5;                       /* Deixa a tarefa meio transparente */
+}
+
+/* Muda o fundo da tarefa ao passar o mouse por cima */
+.tasks li:hover {
+    background-color: #f5f5f5;          /* Cinza mais claro ao passar o mouse */
+}
+
+/* Centraliza os títulos das colunas */
+h2 {
+    text-align: center;
+}

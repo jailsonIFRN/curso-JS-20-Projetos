@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Define o tipo de codificação de caracteres para UTF-8 -->
+    <meta charset="UTF-8" />
+
+    <!-- Define o título da página que aparece na aba do navegador -->
+    <title>Kanban</title>
+
+    <!-- Importa o arquivo CSS externo para estilização da página -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Importa o arquivo JavaScript externo e adia sua execução até o carregamento completo da página -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Título principal da página -->
+    <h1>Kanban</h1>
+
+    <!-- Formulário para adicionar uma nova tarefa -->
+    <form id="add-task-form">
+      <p>Crie uma nova tarefa:</p>
+      
+      <!-- Campo de entrada de texto para o título da nova tarefa -->
+      <input type="text" placeholder="Digite o título..." />
+
+      <!-- Botão para enviar o formulário e criar a tarefa -->
+      <button type="submit">Criar</button>
+    </form>
+
+    <!-- Container principal do quadro Kanban -->
+    <div class="kanban">
+
+      <!-- Coluna "Para fazer" -->
+      <div class="column">
+        <h2>Para fazer</h2>
+
+        <!-- Lista de tarefas que ainda precisam ser feitas -->
+        <ul class="tasks" id="todo">
+          <!-- Tarefas individuais, arrastáveis -->
+          <li draggable="true">Tarefa 1</li>
+          <li draggable="true">Tarefa 2</li>
+        </ul>
+      </div>
+
+      <!-- Coluna "Fazendo" -->
+      <div class="column">
+        <h2>Fazendo</h2>
+
+        <!-- Lista de tarefas que estão em andamento -->
+        <ul class="tasks" id="doing">
+          <li draggable="true">Tarefa 3</li>
+          <li draggable="true">Tarefa 4</li>
+        </ul>
+      </div>
+
+      <!-- Coluna "Prontas" -->
+      <div class="column">
+        <h2>Prontas</h2>
+
+        <!-- Lista de tarefas que já foram concluídas -->
+        <ul class="tasks" id="done">
+          <li draggable="true">Tarefa 5</li>
+          <li draggable="true">Tarefa 6</li>
+        </ul>
+      </div>
+
+    </div>
+  </body>
+</html>
